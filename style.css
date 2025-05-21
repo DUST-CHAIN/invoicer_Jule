@@ -1,0 +1,141 @@
+/* Moved from index.html */
+body { font-family: sans-serif; margin: 0; }
+header { background-color: #f0f0f0; padding: 1em; text-align: center; }
+.main-container { display: flex; }
+nav { width: 200px; background-color: #e0e0e0; padding: 1em; }
+main { flex-grow: 1; padding: 1em; }
+textarea { width: 90%; min-height: 80px; margin-bottom: 5px; }
+button { margin-bottom: 10px; }
+.output-container { margin-bottom: 20px; }
+#richTextOutput { border: 1px solid #ccc; padding: 10px; min-height: 100px; background-color: #f9f9f9; }
+
+/* Enhancements as per subtask */
+
+/* Body/Layout */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    /* Assuming header height is approx 40px (10px padding top + 10px padding bottom + line-height)
+       Adjust min-height of .main-container if header height changes significantly */
+}
+
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 40px); /* Adjusted for header padding */
+}
+
+nav {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Input Area */
+#imageInputContainer {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eef;
+    border-radius: 5px;
+}
+
+#imagePreview {
+    max-width: 100%; /* Changed from 300px to 100% to be responsive within its container */
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    display: block; /* To ensure margin auto works if we want to center it, and helps with layout */
+}
+
+#processButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Retained from original button style */
+}
+
+#processButton:hover {
+    background-color: #0056b3;
+}
+
+/* Output Areas */
+.output-container {
+    margin-bottom: 15px; /* Adjusted from 20px */
+}
+
+textarea {
+    width: 98%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 13px;
+    margin-bottom: 0; /* Remove default margin-bottom as copy button is now display block */
+}
+
+#richTextOutput {
+    width: 98%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Retained from original */
+}
+
+.copy-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    /* margin-left: 5px; Removed as it's now display block */
+    margin-top: 5px;
+    display: block; /* Makes the button take its own line */
+}
+
+.copy-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* General button styling (if any other buttons are added) - can be refined */
+button {
+    margin-bottom: 10px; /* Retained as a general style for other potential buttons */
+}
